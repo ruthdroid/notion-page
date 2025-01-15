@@ -30,7 +30,7 @@ jobs:
         run: pip install -r notionSnapshot/requirements.txt
       - name: Run notionSnapshot
         run: |
-          python3 notionSnapshot/notionsnapshot -d https://discreet-group-2ed.notion.site/Ruth-Alves-17c152b4e847804e891cfc4d84661b5a
+          python3 notionSnapshot/notionsnapshot https://discreet-group-2ed.notion.site/Ruth-Alves-17c152b4e847804e891cfc4d84661b5a
       - name: Push to GitHub pages
         run: |
           git config --global user.name "github-actions[bot]"
